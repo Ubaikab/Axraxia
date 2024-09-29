@@ -1,0 +1,305 @@
+@import url('https://fonts.cdnfonts.com/css/mythical-hoplite-noogies'); 
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: 'Mythical & Hoplite Noodgies', sans-serif;
+    padding-top: 100px ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 9999;
+}
+
+.nav-logo img{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: screen;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.nav-links a:hover{
+    color: #FFB74D;
+    background-color: rgba(29, 28, 28, 0.78);
+    border-radius: 10px;
+}
+
+.login{
+    width: 100px;
+    height: 50px;
+    background-color: #FFB74D;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login:hover{
+    background-color: #FFA500;
+}
+
+.hero-section{
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 140px 0px 10px 20px;
+}
+
+.hero-section h1{
+    color: white;
+    text-align:start;
+    font-size: 3rem;
+    padding: 20px 20px;
+}
+
+.hero-section span{
+    color: #FFB74D;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-section p{
+    color: white;
+    text-align: start;
+    font-size: 1.6rem;
+    padding: 20px 20px;
+}
+
+.hero-section .btn{
+    background-color: #FFB74D;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.hero-section .btn:hover{
+    background-color: #FFA500;
+}
+
+.product-section{
+    padding-top: 100px;
+}
+.product-section h1{
+    color:#FFA500;
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 20px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.product{
+    width: 380px;
+    height: 400px;
+    color: white;
+    background-color: #5f4e4e57;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.product:hover{
+    background-color: #363430;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.product img{
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h2{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.product p{
+    padding: 2px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product button{
+    background-color: #FFB74D;
+    color: white;
+    margin: 10px 110px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+.about-section{
+    background: url(about-background.jpg);
+    background-size: cover;
+    padding-top: 100px;
+    height: 100vh;
+    color: white;
+}
+
+.about-section h1{
+    font-size: 3rem;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    text-align: start;
+    color: #FFA500;
+}
+
+.about-section p{
+    font-size: 1.6rem;
+    padding: 20px 0px 5px 20px;
+    text-align: start;
+}
+
+.about-section p span{
+    color: #FFB74D;
+    font-weight: 700;
+}
+
+.about-section .btn{
+    background-color: #FFB74D;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 15px;
+    margin: 20px;
+}
+
+.about-section .btn:hover{
+    background-color: #FFA500;
+}
+
+
+.contact-us{
+    background: url("contact-background.jpg");
+    background-size: cover;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.contact-us h1{
+    font-size: 3rem;
+    color: #FFA500;
+}
+
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    padding: 20px;
+}
+
+.contact-us form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #FFA500;
+}
+
+.contact-us form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #FFA500;
+    height: 200px;
+    resize: vertical;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea{
+    font-size: 1.4rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #FFA500;
+    color: white;
+}
+
+.contact-us form button{
+    background-color: #FFB74D;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.contact-us form button:hover{
+    background-color: #FFA500;
+}
+
+.footer{
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

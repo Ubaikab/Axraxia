@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Mythical & Hoplite Noodgies', sans-serif;
+    padding-top: 100px ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 9999;
+}
+
+.nav-logo img{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: screen;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.nav-links a:hover{
+    color: #FFB74D;
+    background-color: rgba(29, 28, 28, 0.78);
+    border-radius: 10px;
+}
+
+
+.product-section h1{
+    color:#FFA500;
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 20px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.product{
+    width: 380px;
+    height: 400px;
+    color: white;
+    background-color: #5f4e4e57;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.product:hover{
+    background-color: #363430;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.product img{
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.product h2{
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.product p{
+    padding: 2px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.product button{
+    background-color: #FFB74D;
+    color: white;
+    margin: 10px 130px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}

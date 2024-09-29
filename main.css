@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Mythical & Hoplite Noodgies', sans-serif;
+    padding-top: 100px ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 9999;
+}
+
+.nav-logo img{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: screen;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.4rem;
+}
+
+.nav-links a:hover{
+    color: #FFB74D;
+    background-color: rgba(29, 28, 28, 0.78);
+    border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+
+.coin-wrapper img{
+    width: 120vh;
+    height: 70vh;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.purchase{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.purchase h1{
+    color:#FFB74D;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.purchase h3{
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.purchase p{
+    color:#FFB74D;
+    font-size: 1.9rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.purchase button{
+    background-color: #FFB74D;
+    color: white;
+    font-size: 1.8rem;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-weight: 700;
+    margin: 0px 20px 0px 0px;
+}
+
+.purchase button:hover{
+    background-color: #e69823
+}
